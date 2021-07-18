@@ -11580,6 +11580,8 @@
 		"ItemAliases"					"mana;mb;octarine core"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"MaxUpgradeLevel"				"2"
+		"ItemBaseLevel"					"1"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -11588,27 +11590,27 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_cooldown"		"25"
+				"bonus_cooldown"		"25 35"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cast_range_bonus"			"225"
+				"cast_range_bonus"			"225 335"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_health"			"425"
+				"bonus_health"			"425 625"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_mana"			"725"
+				"bonus_mana"			"725 925"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"bonus_mana_regen"		"3.0"
+				"bonus_mana_regen"		"3.0 4.5"
 			}
 		}
 	}
