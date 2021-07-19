@@ -12482,7 +12482,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_datadriven"
 		"ID"							"69151"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		"AbilityTextureName"			"item_octarine_2"
@@ -12539,11 +12539,11 @@
 			   
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"        "%bonus_cooldown" // собственно то, из-за чего предметы работают и дают бонусы
-					"MODIFIER_PROPERTY_CAST_RANGE_BONUS_STACKING"        "%cast_range_bonus" // это даёт силу
-					"MODIFIER_PROPERTY_HEALTH_BONUS"            "%bonus_health"    // это ловкость
-					"MODIFIER_PROPERTY_MANA_BONUS"        "%bonus_mana"    // а это интеллект. "%название_переменной" - берёт значения из AbilitySpecials.
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"        "%bonus_mana_regen"		 
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"        		 "%bonus_cooldown" // собственно то, из-за чего предметы работают и дают бонусы
+					"MODIFIER_PROPERTY_CAST_RANGE_BONUS"        		 "335"
+					"MODIFIER_PROPERTY_HEALTH_BONUS"               		 "%bonus_health"
+					"MODIFIER_PROPERTY_MANA_BONUS"        		   		 "%bonus_mana"
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"         	 "%bonus_mana_regen"
 				}	
 			}
 		}
