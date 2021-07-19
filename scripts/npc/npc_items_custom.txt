@@ -12529,5 +12529,23 @@
 				"bonus_mana_regen"		"3.0 4.5"
 			}
 		}
+		"Modifiers"
+		{
+			"modifier_item_octarine_datadriven" // название модифаере пишешь какое захочешь
+			{
+				"Passive"            "1" // если 1 значит модифаер активируется сам
+				"IsHidden"            "0" // если 1 то отображается на панеле бафов в кружочках
+				"Attributes"         "MODIFIER_ATTRIBUTE_MULTIPLE"
+			   
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_REDUCTION_CONSTANT"        "%bonus_cooldown" // собственно то, из-за чего предметы работают и дают бонусы
+					"MODIFIER_PROPERTY_CAST_RANGE_BONUS"        "%cast_range_bonus" // это даёт силу
+					"MODIFIER_PROPERTY_HEALTH_BONUS"            "%bonus_health"    // это ловкость
+					"MODIFIER_PROPERTY_MANA_BONUS"        "%bonus_MANA"    // а это интеллект. "%название_переменной" - берёт значения из AbilitySpecials.
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"        "%bonus_mana_regen"		 
+				}	
+			}
+		}
 	}
 }
